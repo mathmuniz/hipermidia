@@ -1,0 +1,28 @@
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form{
+    height: 25%;
+}
+
+input, label, textarea{
+    display: block;
+}
+
+input[type="submit"],input[type="reset"] {
+    width: 100%;
+    margin: 5px 0;
+    padding: 2px;
+    cursor: pointer;
+    background-color: darkblue;
+    color: white;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover,input[type="reset"]:hover {
+    background-color: hotpink;
+}

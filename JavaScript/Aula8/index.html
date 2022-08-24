@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Página principal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="d-flex flex-column justify-content-between alturaPg">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/iff.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                Instituto Federal Fluminense
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Cursos</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="ml-3">
+            <h3>Cadastro de pessoas</h3>            
+            <label>Nome:</label>
+            <input id="inpNome" class="form-control col-md-3" type="text">
+            <label>Sobrenome</label>
+            <input type="text" id="inpSobreNome" class="form-control col-md-3">
+            <label>Salário</label>
+            <input type="number"  id="inpSalario" class="form-control col-md-3">
+            <button id="btnIncluir" class="btn btn-info mt-3">Incluir</button>
+            <table class="table col-md-10 mt-2">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>
+                            Código
+                        </th>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            SobreNome
+                        </th>
+                        <th>
+                            Salário
+                        </th>
+                        <th>
+                            Nome Completo
+                        </th>
+                    </tr>                    
+                </thead>
+
+                <tbody id="bodyPessoa">
+                    <tr>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            Jose
+                        </td>
+                        <td>
+                            Oliveira
+                        </td>
+                        <td>
+                            1897.58
+                        </td>
+                        <td>
+                            Jose Oliveira
+                        </td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </main>
+
+        <footer>
+            <div class="bg-dark text-light rodape ">
+                INSTITUTO FEDERAL FLUMINENSE
+             </div>
+        </footer>
+    </div>     
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/pessoa.js"></script>
+    <script src="js/pessoaController.js"></script>
+</body>
+
+</html>

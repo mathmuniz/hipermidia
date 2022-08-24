@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label, input{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <label for="">Número 1</label>
+    <input type="text" id="inpNum1">
+    <label for="">Número 2</label>
+    <input type="text" id="inpNum2">
+    <button id="btnSoma"> + </button>
+    <button id="btnSub"> - </button>
+    <button id="btnMult"> X </button>
+    <button id="btnDiv"> / </button>
+    <input type="text" id="inpResult" readonly>
+
+    <script>
+        var inpNum1 = document.querySelector('#inpNum1');
+        var inpNum2 = document.querySelector('#inpNum2');
+        var inpResult = document.querySelector('#inpResult');
+        
+        var btnSoma = document.querySelector('#btnSoma');
+        var btnSub  = document.querySelector('#btnSub');
+        var btnMult = document.querySelector('#btnMult');
+        var btnDiv  = document.querySelector('#btnDiv');
+
+        btnSoma.addEventListener('click',function(){
+            let num1 = parseFloat(inpNum1.value);
+            let num2 = parseFloat(inpNum2.value);
+            let soma = num1 + num2;
+            inpResult.value = `${num1} + ${num2} = ${soma}`;
+        });
+
+        btnSub.addEventListener('click',function(){
+            let num1 = parseFloat(inpNum1.value);
+            let num2 = parseFloat(inpNum2.value);
+            let soma = num1 - num2;
+            inpResult.value = `${num1} - ${num2} = ${soma}`;
+        });
+
+        btnMult.addEventListener('click',function(){
+            let num1 = parseFloat(inpNum1.value);
+            let num2 = parseFloat(inpNum2.value);
+            let soma = num1 * num2;
+            inpResult.value = `${num1} X ${num2} = ${soma}`;
+        });
+
+        btnDiv.addEventListener('click',function(){
+            let num1 = parseFloat(inpNum1.value);
+            let num2 = parseFloat(inpNum2.value);
+            let soma = num1 / num2;
+            inpResult.value = `${num1} / ${num2} = ${soma}`;
+        });
+
+
+     </script>
+</body>
+</html>

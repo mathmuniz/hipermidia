@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+
+body{
+    background: rgb(184, 210, 210);
+}
+
+header{
+    position: relative;    
+    background: rebeccapurple;
+    height: 60px;
+    padding-top: 10px;    
+}
+
+nav{
+   width: 50%; 
+   margin-left: auto;
+   margin-right: auto; 
+   text-align: center;
+   padding-top: 15px;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;        
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+    background: cadetblue;
+    position: absolute;    
+}
+
+.logo-img{
+    height: 60px;
+    width: 60px;
+}
+
+.logo-esquerda{
+    left: 10px;
+    top: 5px;
+}
+
+.logo-direita{
+    right: 10px;
+    top: 5px;
+}  
+
+nav ul li:hover{
+    background: white; 
+    cursor: pointer;  
+    border-radius: 5px;  
+    padding: 3px;   
+  }
+  

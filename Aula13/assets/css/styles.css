@@ -1,0 +1,53 @@
+.heading:hover{
+    background: red;
+}
+
+.heading{
+    transition: all 1s;
+}
+
+a{
+    color: darkorange;
+}
+
+a:link{
+    color: deeppink
+}
+
+a:visited{
+    color: firebrick;
+}
+
+a:hover{
+    background: darkmagenta;
+    color: white;
+    text-decoration: none;
+}
+
+a:active{
+    background: darkolivegreen;
+    color: white;
+    text-decoration: none;
+}
+
+input:disabled{
+    background: #A9A9A9;
+    cursor: not-allowed;
+}
+
+input:checked{
+    width: 50px;
+    height: 50px;
+}
+
+input:checked + p{ /*irmão adjacente*/
+    background: red;
+}
+
+.pai .lista li:first-child{
+    background: red;
+}
+
+.pai .lista li:last-child{
+    background: red;
+}

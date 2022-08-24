@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        label{
+            cursor: pointer;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- <form action="#" method="get" 
+    target="_blank" autocomplete="off"> -->
+   <form action="#" autocomplete="off">
+       <header>
+           <h1>Cadastro</h1>
+       </header>
+       <main>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Informe seu nome" >
+        </p>
+
+        <p>
+            <label for="dev">Sou um dev</label>
+            <input type="checkbox" name="dev" id="dev">
+        </p>
+
+        <p>
+            <p>Gênero:</p>
+
+            <label for="rMasculino">Masculino</label>
+            <input type="radio" id="rMasculino" name="genero" value="M" >
+
+            <label for="rFeminino">Feminino</label>
+            <input type="radio" id="rFeminino" name="genero" value="F" >
+
+            <label for="rOutro">Outro</label>
+            <input type="radio" id="rOutro" name="genero" value="O">             
+
+        </p>
+
+        <p>
+            <label for="data">Data</label>
+            <input type="date" name="data" id="data">
+        </p>
+
+        <p>
+            <label for="datahora">Data / hora:</label>
+            <input type="datetime-local" name="datahora" id="datahora">
+        </p>
+
+        <p>
+            <label for="tempo">Hora</label>
+            <input type="time" id="tempo" name="tempo" value="21:52:12">
+        </p>
+
+        <p>
+            <label for="cor">Cor</label>
+            <input type="color" id="cor" name="cor">
+        </p>
+
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+        </p>
+
+        <p>
+            <label for="arquivo">Arquivo</label>
+            <input type="file" name="arquivo" id="arquivo" accept=".pdf" multiple>
+        </p>
+
+        <p>
+            <label for="idade">idade</label>
+            <input type="number" name="idade" id="idade" min="18" max="130">
+        </p>
+
+        <p>
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha">
+        </p>
+
+        <p>
+            <label for="faixa">Faixa: </label>
+            <input type="range" name="faixa" id="faixa" min="1" max="10" step="1" 
+            list="listMark">
+
+            <datalist id="listMark">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">50%</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </datalist>
+            <label id="lblRange">range</label>
+        </p>
+
+        <p>
+            <label for="url">Sua url: </label>
+            <input type="url" id="url" name="url" placeholder="URL">   
+        </p> 
+        
+        <p>
+            <label for="search">Sua pesquisa: </label>
+
+            <input type="search" id="search" name="search" placeholder="search">   
+        </p> 
+        
+        <p>
+            <label for="select">Selecione alguma opção </label>  
+            <select name="select" id="select">
+                <option value="FLA"> Flamengo </option>                
+                <option value="VAS" label="Vasco">
+                <option value="FLU" selected>Fluminense</option>
+                <option value="BOT">Botafogo</option>
+            </select>
+        </p>   
+        
+        <p>
+            <label for="textarea">textarea: </label>
+            <textarea name="textarea" id="textarea" cols="10" rows="10">
+            </textarea>   
+        </p>          
+        <br>
+        <br>
+              
+        </main>
+       <footer>
+           <button type="submit">Enviar dados</button>
+           <button type="reset">Limpar</button>
+       </footer>
+   </form> 
+   <script>
+    r = document.getElementById("faixa");
+    l = document.getElementById('lblRange');
+    r.addEventListener('change',function(e){
+        l.textContent = e.target.value;            
+    });
+</script>
+</body>
+</html>

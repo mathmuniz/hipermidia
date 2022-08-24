@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+
+    <style>
+        *{
+            margin: 0px;
+        }
+
+        body{
+            background: #07c5c5;
+        }
+
+        header{
+            height: 50px;
+            box-shadow: 50px 5px 15px #000080;
+        }
+
+        nav{
+            background: dimgray;
+            height: 100%;
+            display: flex;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        nav ul{
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            justify-content: space-between;
+            width: 100%;
+            padding: 20px;
+        }
+
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            padding: 10px;
+        }
+
+        nav a:hover{
+            background: #483D8B;
+            color: black;
+            border-radius: 5px;
+        }
+
+        article{
+            margin: 25px;
+        }
+
+        h1{
+            font-size: 35px;
+            margin: 10px 0px;
+            border-bottom: 2px solid black;
+            background: #87CEFA;
+            border-radius: 5px;
+        }
+
+        article h2{
+            font-size: 35px;
+            margin: 10px 20px;
+            color: #483D8B;
+        }
+
+        article p{
+            text-align: justify;
+            height: 100px;
+            width: 90%;
+            margin: 10px 40px;
+        }
+
+        footer address{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background: dimgray;
+            height: 100px;
+            color: white;
+        }
+
+        th, tr, td{
+            border: solid 1px black;
+            padding: 5px;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 35%;
+            margin: 20px auto;
+            font-size: 20px;
+        }
+
+        table caption{
+            background: #483D8B;
+            color: white;
+            font-size: 25px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .total{
+            font-weight: bold;
+            text-align: right;
+            background: #483D8B;
+            color: white;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .semlinha{
+            border: none;
+            padding: 4px;
+            box-shadow: 0px 0px 15px #000080;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a> </li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Times cariocas</h1>
+        <article>
+            <h2>Flamengo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, placeat.
+                Ea incidunt illo temporibus optio labore libero aut iure ullam deserunt ratione doloribus,
+                nobis nihil veritatis impedit qui! Ab, neque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sint ipsum dolor et non, ducimus cum neque debitis accusamus suscipit exercitationem,
+                impedit ea, sequi animi quas officiis? Quibusdam corporis eaque necessitatibus.</p>
+        </article>
+        <article>
+            <h2>Vasco</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, placeat.
+                Ea incidunt illo temporibus optio labore libero aut iure ullam deserunt ratione doloribus,
+                nobis nihil veritatis impedit qui! Ab, neque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sint ipsum dolor et non, ducimus cum neque debitis accusamus suscipit exercitationem,
+                impedit ea, sequi animi quas officiis? Quibusdam corporis eaque necessitatibus.</p>
+        </article>
+        <article>
+            <h2>Fluminense</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, placeat.
+                Ea incidunt illo temporibus optio labore libero aut iure ullam deserunt ratione doloribus,
+                nobis nihil veritatis impedit qui! Ab, neque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sint ipsum dolor et non, ducimus cum neque debitis accusamus suscipit exercitationem,
+                impedit ea, sequi animi quas officiis? Quibusdam corporis eaque necessitatibus.</p>
+        </article>
+        <article>
+            <h2>Botafogo</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, placeat.
+                Ea incidunt illo temporibus optio labore libero aut iure ullam deserunt ratione doloribus,
+                nobis nihil veritatis impedit qui! Ab, neque.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sint ipsum dolor et non, ducimus cum neque debitis accusamus suscipit exercitationem,
+                impedit ea, sequi animi quas officiis? Quibusdam corporis eaque necessitatibus.</p>
+        </article>
+
+
+        <hr>
+
+        <table>
+            <caption>Tabela do campeonato</caption>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Pontos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Flamengo</td>
+                    <td>12 pontos</td>
+                </tr>
+                <tr>
+                    <td>Vasco</td>
+                    <td>10 pontos</td>
+                </tr>
+                <tr>
+                    <td>Fluminense</td>
+                    <td>6 pontos</td>
+                </tr>
+                <tr>
+                    <td>Botafogo</td>
+                    <td>5 pontos</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="semlinha">
+                    <td colspan="2" class="total semlinha">Total: 33 pontos</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <footer>
+        <address>
+            <p>IFFluminense Campus Itaperuna</p>
+            <p>Endereço: BR 356, km3, Cidade Nova - Itaperuna-RJ</p>
+            <p>CEP: 28300-000 | Telefone Geral: (22) 3826-2300</p>
+        </address>
+    </footer>
+
+</body>
+
+</html>

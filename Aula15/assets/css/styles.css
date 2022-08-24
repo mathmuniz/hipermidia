@@ -1,0 +1,12 @@
+#p{
+    background: blue;
+}
+
+.p{
+    background: yellow;
+}
+
+#p.p{
+    background: rebeccapurple;
+} 
+

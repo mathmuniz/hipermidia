@@ -1,0 +1,27 @@
+p{
+    border: 1px solid red;
+    margin: 0;
+}
+
+p.float{
+    float: left;
+    width: 200px;
+    margin: 0px 9px; 
+    background: #CCC;
+    border: 1px solid blue;
+}
+
+.clear{
+    border: none;
+}
+
+.flutuado{
+    float: left;
+    width: 100px;
+    background-color: #ADD3DE;
+    text-align: center;
+    margin: 5px;
+}
+.foradofluxo{
+    clear: left;
+}

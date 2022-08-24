@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+
+        body{
+            font-family: sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        table td, table th{
+            border: 2px solid black;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption{
+            caption-side: bottom;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        tfoot td, table th{
+            background: #ddd;
+        }
+
+        ifoot td{
+            font-style: italic;
+            font-weight: bold;
+            border-top-width: 2px;
+            border-top-color: #000;
+        }
+    </style>
+
+</head>
+<body>
+   <table>
+       <caption>Descrição da minha tabela</caption>
+       <thead>
+          <tr>
+            <th>Código</th>  
+            <th>Descrição</th>
+            <th>Valor</th>
+          </tr>
+       </thead>
+
+       <tbody>
+           <tr>
+               <td>Corpo 1</td>
+               <td>Corpo 2</td>
+               <td>R$ 85,23</td>
+           </tr>
+           <tr>
+               <td>Corpo 1</td>
+               <td>Corpo 2</td>
+               <td>R$ 85,23</td>
+           </tr>
+           <tr>
+               <td>Corpo 1</td>
+               <td>Corpo 2</td>
+               <td>R$ 85,23</td>
+           </tr>
+       </tbody>
+
+       <tfoot>
+           <tr>
+               <td colspan="2">Total:</td>
+               
+               <td>R$ 8745,98</td>
+           </tr>
+
+       </tfoot>
+   </table> 
+</body>
+</html>
